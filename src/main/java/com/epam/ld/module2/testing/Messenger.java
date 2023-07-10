@@ -23,6 +23,10 @@ public class Messenger {
         this.templateEngine = templateEngine;
     }
 
+    public static String replacePlaceholders(String template, String name, String john) {
+        return template;
+    }
+
     /**
      * Send message.
      *
