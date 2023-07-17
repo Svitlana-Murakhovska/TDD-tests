@@ -1,5 +1,6 @@
 package com.epam.ld.module2.testing;
 
+import com.epam.ld.module2.testing.template.Template;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -14,7 +15,7 @@ public class TemplateGeneratorTest {
         // Arrange
         String template = "Hello, #{name}! Your subject is #{subject}.";
         String expected = "Hello, John! Your subject is Meeting.";
-        TemplateGenerator templateGenerator = new TemplateGenerator();
+        Template templateGenerator = new Template();
 
         // Act
         String result = templateGenerator.replaceVariablePlaceholders(template, "John", "Meeting");
